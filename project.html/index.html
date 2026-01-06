@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎓 Engineering College Loni Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="cursor-trail"></div>
+  
+  <!-- Floating Particles -->
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="glitch" data-text="Engineering College Loni Portal">Engineering College Loni Portal</h1>
+      <p class="typewriter">Engineering College Loni - Excellence in Engineering Education</p>
+      <div class="cta-buttons">
+        <button class="btn-primary pulse" onclick="scrollToSection('admission')">🎯 CET Admission</button>
+        <button class="btn-secondary" onclick="scrollToSection('departments')">🔬 Explore Labs</button>
+        <button class="btn-secondary" onclick="scrollToSection('helpline')">📞 Get Help</button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="floating-icon"><i class="fas fa-rocket"></i></div>
+      <div class="floating-icon"><i class="fas fa-cogs"></i></div>
+      <div class="floating-icon"><i class="fas fa-microchip"></i></div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="PRES.png" alt="Engineering College Logo" class="college-logo" width="40" height="40">
+        <span>Engineering College Loni</span>
+      </div>
+      <div class="nav-menu">
+        <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        <a href="#admission" class="nav-link"><i class="fas fa-user-plus"></i> CET Admission</a>
+        <a href="#departments" class="nav-link"><i class="fas fa-building"></i> Departments</a>
+        <a href="#syllabus" class="nav-link"><i class="fas fa-book"></i> Syllabus</a>
+        <a href="#downloads" class="nav-link"><i class="fas fa-download"></i> Downloads</a>
+        <a href="#schemes" class="nav-link"><i class="fas fa-university"></i> Schemes</a>
+        <a href="#placement-map" class="nav-link"><i class="fas fa-map-marked-alt"></i> Placement Map</a>
+        <a href="#location-map" class="nav-link"><i class="fas fa-map-marker-alt"></i> Location</a>
+        <a href="#verification" class="nav-link"><i class="fas fa-shield-alt"></i> Verification</a>
+        <a href="#hod" class="nav-link"><i class="fas fa-users"></i> Leadership</a>
+        <a href="#helpline" class="nav-link"><i class="fas fa-phone"></i> Helpline</a>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Stats Section -->
+  <section id="home" class="stats-section">
+    <div class="container">
+      <h2 class="section-title">🌟 Why Choose Engineering College Loni?</h2>
+      <div class="stats-grid">
+        <div class="stat-card" data-count="95">
+          <div class="stat-icon">🎓</div>
+          <div class="stat-number">0%</div>
+          <div class="stat-label">Placement Rate</div>
+        </div>
+        <div class="stat-card" data-count="50">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-number">0+</div>
+          <div class="stat-label">Awards Won</div>
+        </div>
+        <div class="stat-card" data-count="200">
+          <div class="stat-icon">👨🏫</div>
+          <div class="stat-number">0+</div>
+          <div class="stat-label">Expert Faculty</div>
+        </div>
+        <div class="stat-card" data-count="15">
+          <div class="stat-icon">🔬</div>
+          <div class="stat-number">0+</div>
+          <div class="stat-label">Research Labs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CET Admission Section -->
+  <section id="admission" class="admission-section">
+    <div class="container">
+      <h2 class="section-title">🎯 CET-Based Admission Process</h2>
+      <div class="admission-container">
+        <div class="form-container">
+          <form id="admissionForm" class="smart-form">
+            <div class="form-group">
+              <input type="text" id="name" required>
+              <label for="name">Full Name</label>
+              <div class="form-icon"><i class="fas fa-user"></i></div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" required>
+              <label for="email">Email Address</label>
+              <div class="form-icon"><i class="fas fa-envelope"></i></div>
+            </div>
+            <div class="form-group">
+              <input type="number" id="cetScore" min="1" max="200" required>
+              <label for="cetScore">CET Score (Out of 200)</label>
+              <div class="form-icon"><i class="fas fa-trophy"></i></div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="cetRank" required>
+              <label for="cetRank">CET Rank</label>
+              <div class="form-icon"><i class="fas fa-medal"></i></div>
+            </div>
+            <div class="form-group">
+              <select id="program" required>
+                <option value="">Choose Your Path</option>
+                <option value="cs">💻 Computer Science & AI</option>
+                <option value="me">⚙️ Mechanical Engineering</option>
+                <option value="ee">⚡ Electrical Engineering</option>
+                <option value="ce">🏗️ Civil Engineering</option>
+                <option value="ae">✈️ Aerospace Engineering</option>
+              </select>
+              <div class="form-icon"><i class="fas fa-graduation-cap"></i></div>
+            </div>
+            <div class="eligibility-check" id="eligibilityCheck">
+              <div class="eligibility-status">Enter CET details to check eligibility</div>
+            </div>
+            <button type="submit" class="submit-btn">
+              <span>Submit CET Application</span>
+              <i class="fas fa-rocket"></i>
+            </button>
+          </form>
+        </div>
+        <div class="preview-container">
+          <div class="application-preview">
+            <h3>🎯 CET Eligibility Preview</h3>
+            <div class="preview-content">
+              <p id="previewName">Name will appear here</p>
+              <p id="previewEmail">Email will appear here</p>
+              <p id="previewCET">CET Score will appear here</p>
+              <p id="previewProgram">Program will appear here</p>
+            </div>
+            <div class="cutoff-info">
+              <h4>📊 Previous Year Cutoffs</h4>
+              <div class="cutoff-list">
+                <div class="cutoff-item">CS: Rank 1-5000</div>
+                <div class="cutoff-item">ME: Rank 1-8000</div>
+                <div class="cutoff-item">EE: Rank 1-7000</div>
+                <div class="cutoff-item">CE: Rank 1-10000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Departments Section -->
+  <section id="departments" class="departments-section">
+    <div class="container">
+      <h2 class="section-title">🏛️ Engineering Departments</h2>
+      <div class="departments-grid">
+        <div class="dept-card" data-dept="cs">
+          <div class="dept-icon">💻</div>
+          <h3>Computer Science</h3>
+          <p>AI, Machine Learning, Cybersecurity</p>
+          <div class="dept-stats">
+            <span>👥 500+ Students</span>
+            <span>🏆 #1 Ranked</span>
+          </div>
+          <button class="explore-btn">Explore Labs</button>
+        </div>
+        <div class="dept-card" data-dept="me">
+          <div class="dept-icon">⚙️</div>
+          <h3>Mechanical</h3>
+          <p>Robotics, Manufacturing, Design</p>
+          <div class="dept-stats">
+            <span>👥 400+ Students</span>
+            <span>🔬 15 Labs</span>
+          </div>
+          <button class="explore-btn">Explore Labs</button>
+        </div>
+        <div class="dept-card" data-dept="ee">
+          <div class="dept-icon">⚡</div>
+          <h3>Electrical</h3>
+          <p>Power Systems, Electronics, IoT</p>
+          <div class="dept-stats">
+            <span>👥 350+ Students</span>
+            <span>💡 Smart Grid</span>
+          </div>
+          <button class="explore-btn">Explore Labs</button>
+        </div>
+        <div class="dept-card" data-dept="ce">
+          <div class="dept-icon">🏗️</div>
+          <h3>Civil</h3>
+          <p>Infrastructure, Sustainability</p>
+          <div class="dept-stats">
+            <span>👥 300+ Students</span>
+            <span>🌱 Green Tech</span>
+          </div>
+          <button class="explore-btn">Explore Labs</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Syllabus Section -->
+  <section id="syllabus" class="syllabus-section">
+    <div class="container">
+      <h2 class="section-title">📚 Department Syllabus</h2>
+      <div class="syllabus-tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-dept="cs">Computer Science</button>
+          <button class="tab-btn" data-dept="me">Mechanical</button>
+          <button class="tab-btn" data-dept="ee">Electrical</button>
+          <button class="tab-btn" data-dept="ce">Civil</button>
+        </div>
+        <div class="tab-content">
+          <div class="syllabus-content active" id="cs-syllabus">
+            <h3>💻 Computer Science & AI Syllabus</h3>
+            <div class="semester-grid">
+              <div class="semester-card">
+                <h4>Semester 1</h4>
+                <ul>
+                  <li>Programming Fundamentals</li>
+                  <li>Mathematics I</li>
+                  <li>Physics</li>
+                  <li>Engineering Graphics</li>
+                </ul>
+              </div>
+              <div class="semester-card">
+                <h4>Semester 2</h4>
+                <ul>
+                  <li>Data Structures</li>
+                  <li>Mathematics II</li>
+                  <li>Digital Electronics</li>
+                  <li>Computer Organization</li>
+                </ul>
+              </div>
+              <div class="semester-card">
+                <h4>Semester 3</h4>
+                <ul>
+                  <li>Object Oriented Programming</li>
+                  <li>Database Management</li>
+                  <li>Computer Networks</li>
+                  <li>Operating Systems</li>
+                </ul>
+              </div>
+              <div class="semester-card">
+                <h4>Semester 4</h4>
+                <ul>
+                  <li>Machine Learning</li>
+                  <li>Web Development</li>
+                  <li>Software Engineering</li>
+                  <li>Artificial Intelligence</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Document Verification Section -->
+  <section id="verification" class="verification-section">
+    <div class="container">
+      <h2 class="section-title">🛡️ Document Verification Center</h2>
+      <div class="verification-grid">
+        <div class="verification-card">
+          <div class="card-header">
+            <h3>📋 Required Documents</h3>
+            <div class="status-badge">Mandatory</div>
+          </div>
+          <div class="document-list">
+            <div class="doc-item">
+              <i class="fas fa-file-alt"></i>
+              <span>10th Mark Sheet</span>
+              <div class="verify-btn">Upload</div>
+            </div>
+            <div class="doc-item">
+              <i class="fas fa-file-alt"></i>
+              <span>12th Mark Sheet</span>
+              <div class="verify-btn">Upload</div>
+            </div>
+            <div class="doc-item">
+              <i class="fas fa-trophy"></i>
+              <span>CET Score Card</span>
+              <div class="verify-btn">Upload</div>
+            </div>
+            <div class="doc-item">
+              <i class="fas fa-id-card"></i>
+              <span>Aadhar Card</span>
+              <div class="verify-btn">Upload</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="verification-card">
+          <div class="card-header">
+            <h3>✅ Verification Status</h3>
+            <div class="status-badge pending">Pending</div>
+          </div>
+          <div class="verification-steps">
+            <div class="step-item">
+              <div class="step-icon">📤</div>
+              <div class="step-info">
+                <h4>Document Upload</h4>
+                <p>Upload all required documents</p>
+              </div>
+              <div class="step-status pending">Pending</div>
+            </div>
+            <div class="step-item">
+              <div class="step-icon">🔍</div>
+              <div class="step-info">
+                <h4>AI Verification</h4>
+                <p>Automated document validation</p>
+              </div>
+              <div class="step-status">Waiting</div>
+            </div>
+            <div class="step-item">
+              <div class="step-icon">👨💼</div>
+              <div class="step-info">
+                <h4>Manual Review</h4>
+                <p>Admin verification process</p>
+              </div>
+              <div class="step-status">Waiting</div>
+            </div>
+            <div class="step-item">
+              <div class="step-icon">✅</div>
+              <div class="step-info">
+                <h4>Approval</h4>
+                <p>Final verification complete</p>
+              </div>
+              <div class="step-status">Waiting</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="verification-card">
+          <div class="card-header">
+            <h3>🤖 AI Document Scanner</h3>
+            <div class="status-badge active">Live</div>
+          </div>
+          <div class="scanner-zone" id="scannerZone">
+            <i class="fas fa-camera"></i>
+            <p>Click to scan document with AI</p>
+            <div class="scan-features">
+              <span>✓ Auto-crop</span>
+              <span>✓ Text extraction</span>
+              <span>✓ Fraud detection</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership Section -->
+  <section id="hod" class="leadership-section">
+    <div class="container">
+      <h2 class="section-title">👥 Leadership Team</h2>
+      <div class="leadership-grid">
+        <div class="leader-card">
+          <div class="leader-avatar">👨💼</div>
+          <h3>Dr. Rajesh Kumar</h3>
+          <p class="leader-title">Principal</p>
+          <p class="leader-message">"Empowering the next generation of innovators through cutting-edge education and research."</p>
+          <div class="leader-achievements">
+            <span>🎓 PhD MIT</span>
+            <span>📚 50+ Publications</span>
+          </div>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">👩🔬</div>
+          <h3>Dr. Priya Sharma</h3>
+          <p class="leader-title">HOD - Computer Science</p>
+          <p class="leader-message">"Leading AI research and preparing students for the digital future."</p>
+          <div class="leader-achievements">
+            <span>🤖 AI Expert</span>
+            <span>🏆 Research Awards</span>
+          </div>
+        </div>
+        <div class="leader-card">
+          <div class="leader-avatar">👨🔧</div>
+          <h3>Prof. Amit Patel</h3>
+          <p class="leader-title">HOD - Mechanical</p>
+          <p class="leader-message">"Innovation in manufacturing and sustainable engineering solutions."</p>
+          <div class="leader-achievements">
+            <span>⚙️ Industry Expert</span>
+            <span>🌱 Green Tech</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Helpline Section -->
+  <section id="helpline" class="helpline-section">
+    <div class="container">
+      <h2 class="section-title">📞 Engineering College Loni Helpline Center</h2>
+      <div class="helpline-grid">
+        <div class="helpline-card emergency">
+          <div class="helpline-icon">🚨</div>
+          <h3>Emergency Helpline</h3>
+          <div class="phone-number">+91-20-2765-3168</div>
+          <p>24/7 Emergency Support</p>
+          <button class="call-btn emergency-btn">Call Now</button>
+        </div>
+        
+        <div class="helpline-card admission">
+          <div class="helpline-icon">🎓</div>
+          <h3>Admission Helpline</h3>
+          <div class="phone-number">+91-20-2765-3169</div>
+          <p>CET Admission Queries</p>
+          <div class="timing">Mon-Sat: 9AM-6PM</div>
+          <button class="call-btn">Call Now</button>
+        </div>
+        
+        <div class="helpline-card technical">
+          <div class="helpline-icon">💻</div>
+          <h3>Technical Support</h3>
+          <div class="phone-number">+91-20-2765-3170</div>
+          <p>Portal & System Issues</p>
+          <div class="timing">Mon-Fri: 10AM-5PM</div>
+          <button class="call-btn">Call Now</button>
+        </div>
+        
+        <div class="helpline-card general">
+          <div class="helpline-icon">ℹ️</div>
+          <h3>General Inquiry</h3>
+          <div class="phone-number">+91-20-2765-3171</div>
+          <p>General Information</p>
+          <div class="timing">Mon-Sat: 9AM-5PM</div>
+          <button class="call-btn">Call Now</button>
+        </div>
+      </div>
+      
+      <div class="contact-info">
+        <div class="contact-card">
+          <h3>🏢 Engineering College Loni Campus Address</h3>
+          <p>📍 A/P Loni, Tal.Rahata, Dist.Ahilyanagar</p>
+          <p>✉️ info@engineeringcollegeloni.ac.in</p>
+          <p>🌐 www.engineeringcollegeloni.ac.in</p>
+        </div>
+        
+        <div class="contact-card">
+          <h3>⏰ Office Hours</h3>
+          <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+          <p>Saturday: 9:00 AM - 1:00 PM</p>
+          <p>Sunday: Closed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>🔧 Engineering College Loni</h3>
+          <p>Engineering College Loni</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#admission">Admissions</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#hod">Faculty</a></li>
+            <li><a href="#verification">Verification</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <p>📍 A/P Loni, Tal.Rahata, Dist.Ahilyanagar</p>
+          <p>📞 +91-20-2765-3168</p>
+          <p>✉️ info@precloni.ac.in</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Engineering College Loni Portal. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  <!-- Download Center Section -->
+  <section id="downloads" class="downloads-section">
+    <div class="container">
+      <h2 class="section-title">📥 Download Center</h2>
+      <div class="downloads-grid">
+        <div class="download-card">
+          <div class="download-icon">📋</div>
+          <h3>College Information</h3>
+          <p>Complete college brochure with facilities, courses, and campus details</p>
+          <div class="download-details">
+            <span>📄 PDF Format</span>
+            <span>📊 5.2 MB</span>
+          </div>
+          <button class="download-btn" onclick="downloadCollegeInfo()">
+            <i class="fas fa-download"></i> Download Brochure
+          </button>
+        </div>
+        
+        <div class="download-card">
+          <div class="download-icon">📝</div>
+          <h3>Registration Form</h3>
+          <p>Printable registration form for offline application submission</p>
+          <div class="download-details">
+            <span>📄 PDF Format</span>
+            <span>📊 2.1 MB</span>
+          </div>
+          <button class="download-btn" onclick="downloadRegistrationForm()">
+            <i class="fas fa-download"></i> Download Form
+          </button>
+        </div>
+        
+        <div class="download-card">
+          <div class="download-icon">📚</div>
+          <h3>Syllabus PDF</h3>
+          <p>Complete syllabus for all engineering departments</p>
+          <div class="download-details">
+            <span>📄 PDF Format</span>
+            <span>📊 8.7 MB</span>
+          </div>
+          <button class="download-btn" onclick="downloadSyllabus()">
+            <i class="fas fa-download"></i> Download Syllabus
+          </button>
+        </div>
+        
+        <div class="download-card">
+          <div class="download-icon">🎓</div>
+          <h3>Admission Guide</h3>
+          <p>Step-by-step CET admission process and requirements</p>
+          <div class="download-details">
+            <span>📄 PDF Format</span>
+            <span>📊 3.4 MB</span>
+          </div>
+          <button class="download-btn" onclick="downloadAdmissionGuide()">
+            <i class="fas fa-download"></i> Download Guide
+          </button>
+        </div>
+      </div>
+      
+      <div class="download-stats">
+        <div class="stat-item">
+          <div class="stat-number" id="totalDownloads">1,247</div>
+          <div class="stat-label">Total Downloads</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Available</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Free</div>
+          <div class="stat-label">Cost</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Government Schemes Section -->
+  <section id="schemes" class="schemes-section">
+    <div class="container">
+      <h2 class="section-title">🏛️ Government Schemes & Scholarships</h2>
+      <div class="schemes-filter">
+        <button class="filter-btn active" data-category="all">All Schemes</button>
+        <button class="filter-btn" data-category="central">Central Govt</button>
+        <button class="filter-btn" data-category="state">State Govt</button>
+        <button class="filter-btn" data-category="minority">Minority</button>
+      </div>
+      
+      <div class="schemes-grid">
+        <div class="scheme-card" data-category="central">
+          <div class="scheme-header">
+            <div class="scheme-icon">🇮🇳</div>
+            <div class="scheme-badge central">Central Govt</div>
+          </div>
+          <h3>Prime Minister's Scholarship Scheme</h3>
+          <div class="scheme-amount">₹25,000 - ₹30,000/year</div>
+          <div class="scheme-details">
+            <p><strong>Eligibility:</strong> Children of Armed Forces personnel</p>
+            <p><strong>Income Limit:</strong> No income limit</p>
+            <p><strong>Duration:</strong> 4 years</p>
+          </div>
+          <div class="scheme-actions">
+            <button class="apply-btn" onclick="applyScheme('pm-scholarship')">Apply Now</button>
+            <button class="info-btn" onclick="showSchemeDetails('pm-scholarship')">More Info</button>
+          </div>
+        </div>
+
+        <div class="scheme-card" data-category="central">
+          <div class="scheme-header">
+            <div class="scheme-icon">📚</div>
+            <div class="scheme-badge central">Central Govt</div>
+          </div>
+          <h3>National Scholarship Portal</h3>
+          <div class="scheme-amount">₹10,000 - ₹20,000/year</div>
+          <div class="scheme-details">
+            <p><strong>Eligibility:</strong> Merit-based for all categories</p>
+            <p><strong>Income Limit:</strong> ₹6 Lakh/annum</p>
+            <p><strong>Duration:</strong> Full course duration</p>
+          </div>
+          <div class="scheme-actions">
+            <button class="apply-btn" onclick="applyScheme('nsp')">Apply Now</button>
+            <button class="info-btn" onclick="showSchemeDetails('nsp')">More Info</button>
+          </div>
+        </div>
+
+        <div class="scheme-card" data-category="state">
+          <div class="scheme-header">
+            <div class="scheme-icon">🏛️</div>
+            <div class="scheme-badge state">Maharashtra Govt</div>
+          </div>
+          <h3>EBC Scholarship Maharashtra</h3>
+          <div class="scheme-amount">₹51,000/year</div>
+          <div class="scheme-details">
+            <p><strong>Eligibility:</strong> EBC category students</p>
+            <p><strong>Income Limit:</strong> ₹8 Lakh/annum</p>
+            <p><strong>Duration:</strong> 4 years</p>
+          </div>
+          <div class="scheme-actions">
+            <button class="apply-btn" onclick="applyScheme('ebc-mh')">Apply Now</button>
+            <button class="info-btn" onclick="showSchemeDetails('ebc-mh')">More Info</button>
+          </div>
+        </div>
+
+        <div class="scheme-card" data-category="state">
+          <div class="scheme-header">
+            <div class="scheme-icon">👥</div>
+            <div class="scheme-badge state">Maharashtra Govt</div>
+          </div>
+          <h3>SC/ST Scholarship</h3>
+          <div class="scheme-amount">₹59,200/year</div>
+          <div class="scheme-details">
+            <p><strong>Eligibility:</strong> SC/ST category students</p>
+            <p><strong>Income Limit:</strong> ₹2.5 Lakh/annum</p>
+            <p><strong>Duration:</strong> Full course duration</p>
+          </div>
+          <div class="scheme-actions">
+            <button class="apply-btn" onclick="applyScheme('scst-mh')">Apply Now</button>
+            <button class="info-btn" onclick="showSchemeDetails('scst-mh')">More Info</button>
+          </div>
+        </div>
+
+        <div class="scheme-card" data-category="minority">
+          <div class="scheme-header">
+            <div class="scheme-icon">🕌</div>
+            <div class="scheme-badge minority">Minority Affairs</div>
+          </div>
+          <h3>Maulana Azad Scholarship</h3>
+          <div class="scheme-amount">₹20,000/year</div>
+          <div class="scheme-details">
+            <p><strong>Eligibility:</strong> Minority community students</p>
+            <p><strong>Income Limit:</strong> ₹2 Lakh/annum</p>
+            <p><strong>Duration:</strong> 4 years</p>
+          </div>
+          <div class="scheme-actions">
+            <button class="apply-btn" onclick="applyScheme('maulana-azad')">Apply Now</button>
+            <button class="info-btn" onclick="showSchemeDetails('maulana-azad')">More Info</button>
+          </div>
+        </div>
+
+        <div class="scheme-card" data-category="central">
+          <div class="scheme-header">
+            <div class="scheme-icon">💰</div>
+            <div class="scheme-badge central">Central Govt</div>
+          </div>
+          <h3>INSPIRE Scholarship</h3>
+          <div class="scheme-amount">₹80,000/year</div>
+          <div class="scheme-details">
+            <p><strong>Eligibility:</strong> Top 1% in 12th boards</p>
+            <p><strong>Income Limit:</strong> ₹6 Lakh/annum</p>
+            <p><strong>Duration:</strong> 5 years (B.Tech + M.Tech)</p>
+          </div>
+          <div class="scheme-actions">
+            <button class="apply-btn" onclick="applyScheme('inspire')">Apply Now</button>
+            <button class="info-btn" onclick="showSchemeDetails('inspire')">More Info</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="schemes-summary">
+        <div class="summary-card">
+          <h3>📊 Scholarship Statistics</h3>
+          <div class="stats-row">
+            <div class="stat">
+              <span class="stat-number">6</span>
+              <span class="stat-label">Available Schemes</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">₹2.5L</span>
+              <span class="stat-label">Max Amount/Year</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">85%</span>
+              <span class="stat-label">Success Rate</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="summary-card">
+          <h3>📋 Application Tips</h3>
+          <ul>
+            <li>Apply early - deadlines are strict</li>
+            <li>Keep all documents ready</li>
+            <li>Check eligibility criteria carefully</li>
+            <li>Follow up on application status</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- AI Assistant Chatbot -->
+  <div class="ai-assistant" id="aiAssistant">
+    <div class="chat-header">
+      <div class="assistant-info">
+        <div class="assistant-avatar">🤖</div>
+        <div class="assistant-details">
+          <h4>PREC AI Assistant</h4>
+          <span class="status online">Online</span>
+        </div>
+      </div>
+      <div class="chat-controls">
+        <button class="minimize-btn" onclick="toggleChat()">−</button>
+        <button class="close-btn" onclick="closeChat()">×</button>
+      </div>
+    </div>
+    
+    <div class="chat-body" id="chatBody">
+      <div class="welcome-message">
+        <div class="message bot-message">
+          <div class="message-content">
+            <p>👋 Hi! I'm your PREC Loni AI Assistant. I can help you with:</p>
+            <ul>
+              <li>🎯 CET Admission Process</li>
+              <li>📚 Course Information</li>
+              <li>💰 Fees & Scholarships</li>
+              <li>📋 Document Requirements</li>
+              <li>📞 Contact Information</li>
+            </ul>
+            <p>Ask me anything about admissions!</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="quick-questions">
+        <p>Quick Questions:</p>
+        <div class="quick-btn" onclick="askQuestion('What is the CET cutoff?')">CET Cutoff</div>
+        <div class="quick-btn" onclick="askQuestion('What documents are required?')">Documents</div>
+        <div class="quick-btn" onclick="askQuestion('What are the fees?')">Fees Structure</div>
+        <div class="quick-btn" onclick="askQuestion('How to apply?')">Application Process</div>
+      </div>
+    </div>
+    
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Ask about admissions..." onkeypress="handleEnter(event)">
+      <button class="send-btn" onclick="sendMessage()">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- AI Assistant Toggle Button -->
+  <div class="ai-toggle" onclick="openChat()">
+    <div class="toggle-icon">🤖</div>
+    <div class="toggle-text">AI Assistant</div>
+    <div class="notification-dot" id="notificationDot"></div>
+  </div>
+  <!-- Placement Map Section -->
+  <section id="placement-map" class="placement-map-section">
+    <div class="container">
+      <h2 class="section-title">🗺️ Placement Rate Map</h2>
+      <div class="map-container">
+        <div class="map-header">
+          <div class="map-controls">
+            <button class="map-btn active" data-view="india">🇮🇳 India</button>
+            <button class="map-btn" data-view="maharashtra">🏛️ Maharashtra</button>
+            <button class="map-btn" data-view="companies">🏢 Companies</button>
+          </div>
+          <div class="map-legend">
+            <div class="legend-item">
+              <div class="legend-color high"></div>
+              <span>High (80%+)</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color medium"></div>
+              <span>Medium (60-80%)</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color low"></div>
+              <span>Low (40-60%)</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="interactive-map" id="placementMap">
+          <!-- India Map View -->
+          <div class="map-view india-map active" id="indiaMap">
+            <svg viewBox="0 0 800 600" class="india-svg">
+              <!-- Simplified India Map with States -->
+              <g class="states">
+                <path class="state high" data-state="maharashtra" data-rate="95" d="M200,300 L300,280 L320,350 L250,380 Z" />
+                <path class="state high" data-state="karnataka" data-rate="88" d="M250,380 L320,350 L340,420 L280,450 Z" />
+                <path class="state medium" data-state="gujarat" data-rate="75" d="M150,250 L200,300 L180,350 L120,320 Z" />
+                <path class="state high" data-state="tamil-nadu" data-rate="92" d="M280,450 L340,420 L360,480 L300,500 Z" />
+                <path class="state medium" data-state="telangana" data-rate="78" d="M320,350 L380,330 L400,380 L340,420 Z" />
+                <path class="state medium" data-state="delhi" data-rate="85" d="M280,150 L320,140 L330,170 L290,180 Z" />
+                <path class="state low" data-state="rajasthan" data-rate="65" d="M150,180 L250,160 L280,220 L180,240 Z" />
+                <path class="state medium" data-state="west-bengal" data-rate="72" d="M500,250 L550,240 L560,290 L510,300 Z" />
+                <path class="state low" data-state="uttar-pradesh" data-rate="58" d="M300,180 L450,170 L460,230 L310,240 Z" />
+                <path class="state medium" data-rate="68" d="M400,200 L500,190 L510,250 L410,260 Z" />
+              </g>
+              
+              <!-- PREC Loni Location Marker -->
+              <circle class="college-marker" cx="270" cy="320" r="8" />
+              <text class="college-label" x="280" y="315">PREC Loni</text>
+            </svg>
+          </div>
+          
+          <!-- Maharashtra Detailed Map -->
+          <div class="map-view maharashtra-map" id="maharashtraMap">
+            <svg viewBox="0 0 600 400" class="maharashtra-svg">
+              <g class="cities">
+                <circle class="city high" data-city="pune" data-rate="95" cx="200" cy="250" r="25" />
+                <text class="city-label" x="200" y="255">Pune (95%)</text>
+                
+                <circle class="city high" data-city="mumbai" data-rate="98" cx="150" cy="200" r="30" />
+                <text class="city-label" x="150" y="205">Mumbai (98%)</text>
+                
+                <circle class="city medium" data-city="nagpur" data-rate="78" cx="350" cy="180" r="20" />
+                <text class="city-label" x="350" y="185">Nagpur (78%)</text>
+                
+                <circle class="city medium" data-city="nashik" data-rate="72" cx="180" cy="150" r="18" />
+                <text class="city-label" x="180" y="155">Nashik (72%)</text>
+                
+                <circle class="city low" data-city="aurangabad" data-rate="65" cx="250" cy="180" r="15" />
+                <text class="city-label" x="250" y="185">Aurangabad (65%)</text>
+                
+                <!-- PREC Loni Highlighted -->
+                <circle class="college-marker pulse" cx="210" cy="260" r="12" />
+                <text class="college-label highlight" x="225" y="265">PREC Loni (95%)</text>
+              </g>
+            </svg>
+          </div>
+          
+          <!-- Company Distribution Map -->
+          <div class="map-view company-map" id="companyMap">
+            <div class="company-grid">
+              <div class="company-cluster" data-sector="it">
+                <div class="cluster-icon">💻</div>
+                <h4>IT & Software</h4>
+                <div class="cluster-stats">
+                  <span>45% of placements</span>
+                  <span>₹8.5L avg package</span>
+                </div>
+                <div class="company-list">
+                  <span class="company-tag">TCS</span>
+                  <span class="company-tag">Infosys</span>
+                  <span class="company-tag">Microsoft</span>
+                  <span class="company-tag">Google</span>
+                </div>
+              </div>
+              
+              <div class="company-cluster" data-sector="core">
+                <div class="cluster-icon">⚙️</div>
+                <h4>Core Engineering</h4>
+                <div class="cluster-stats">
+                  <span>30% of placements</span>
+                  <span>₹6.2L avg package</span>
+                </div>
+                <div class="company-list">
+                  <span class="company-tag">L&T</span>
+                  <span class="company-tag">Bajaj</span>
+                  <span class="company-tag">Mahindra</span>
+                  <span class="company-tag">Tata Motors</span>
+                </div>
+              </div>
+              
+              <div class="company-cluster" data-sector="consulting">
+                <div class="cluster-icon">📊</div>
+                <h4>Consulting</h4>
+                <div class="cluster-stats">
+                  <span>15% of placements</span>
+                  <span>₹12L avg package</span>
+                </div>
+                <div class="company-list">
+                  <span class="company-tag">Deloitte</span>
+                  <span class="company-tag">EY</span>
+                  <span class="company-tag">KPMG</span>
+                  <span class="company-tag">Accenture</span>
+                </div>
+              </div>
+              
+              <div class="company-cluster" data-sector="finance">
+                <div class="cluster-icon">💰</div>
+                <h4>Finance & Banking</h4>
+                <div class="cluster-stats">
+                  <span>10% of placements</span>
+                  <span>₹9.8L avg package</span>
+                </div>
+                <div class="company-list">
+                  <span class="company-tag">HDFC</span>
+                  <span class="company-tag">ICICI</span>
+                  <span class="company-tag">Goldman Sachs</span>
+                  <span class="company-tag">JP Morgan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="map-info" id="mapInfo">
+          <div class="info-card">
+            <h3 id="infoTitle">PREC Loni Placement Overview</h3>
+            <div class="info-stats">
+              <div class="stat-row">
+                <span class="stat-label">Overall Placement Rate:</span>
+                <span class="stat-value" id="overallRate">95%</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">Average Package:</span>
+                <span class="stat-value" id="avgPackage">₹6.5 LPA</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">Highest Package:</span>
+                <span class="stat-value" id="highestPackage">₹45 LPA</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-label">Top Recruiters:</span>
+                <span class="stat-value" id="topRecruiters">Microsoft, TCS, L&T</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="placement-insights">
+        <div class="insight-card">
+          <div class="insight-icon">📈</div>
+          <h4>Trending Sectors</h4>
+          <p>IT & Software leading with 45% placements, followed by Core Engineering at 30%</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-icon">🌟</div>
+          <h4>Top Performers</h4>
+          <p>Computer Science: 98% | Mechanical: 92% | Electrical: 90% | Civil: 88%</p>
+        </div>
+        <div class="insight-card">
+          <div class="insight-icon">🎯</div>
+          <h4>Geographic Reach</h4>
+          <p>Students placed across 15+ states with highest concentration in Maharashtra & Karnataka</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- College Location Map Section -->
+  <section id="location-map" class="location-map-section">
+    <div class="container">
+      <h2 class="section-title">📍 Engineering College Loni Campus Location</h2>
+      <div class="location-container">
+        <div class="map-wrapper">
+          <div class="location-map" id="collegeMap">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.123456789!2d73.9876543!3d18.5123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sLoni%20Kalbhor%2C%20Pune!5e0!3m2!1sen!2sin!4v1234567890"
+              width="100%" 
+              height="400" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div class="map-overlay">
+              <div class="college-pin">
+                <div class="pin-icon">🏛️</div>
+                <div class="pin-label">PREC Loni</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="location-info">
+          <div class="address-card">
+            <h3>🏢 Campus Address</h3>
+            <div class="address-details">
+              <p><strong>Engineering College Loni</strong></p>
+              <p>📍 A/P Loni, Tal.Rahata, Dist.Ahilyanagar</p>
+              <p>📞 +91-20-2765-3168</p>
+              <p>✉️ info@precloni.ac.in</p>
+            </div>
+            <div class="action-buttons">
+              <button class="direction-btn" onclick="getDirections()">
+                <i class="fas fa-route"></i> Get Directions
+              </button>
+              <button class="share-btn" onclick="shareLocation()">
+                <i class="fas fa-share-alt"></i> Share Location
+              </button>
+            </div>
+          </div>
+          
+          <div class="transport-info">
+            <h3>🚌 How to Reach</h3>
+            <div class="transport-options">
+              <div class="transport-item">
+                <div class="transport-icon">✈️</div>
+                <div class="transport-details">
+                  <h4>From Airport</h4>
+                  <p>Pune Airport - 25 km (45 mins)</p>
+                  <p>Taxi/Cab available</p>
+                </div>
+              </div>
+              
+              <div class="transport-item">
+                <div class="transport-icon">🚂</div>
+                <div class="transport-details">
+                  <h4>From Railway Station</h4>
+                  <p>Pune Station - 30 km (1 hour)</p>
+                  <p>Bus/Taxi available</p>
+                </div>
+              </div>
+              
+              <div class="transport-item">
+                <div class="transport-icon">🚌</div>
+                <div class="transport-details">
+                  <h4>Public Transport</h4>
+                  <p>PMPML Bus Service</p>
+                  <p>Route: Pune-Loni</p>
+                </div>
+              </div>
+              
+              <div class="transport-item">
+                <div class="transport-icon">🚗</div>
+                <div class="transport-details">
+                  <h4>By Car</h4>
+                  <p>Via Pune-Solapur Highway</p>
+                  <p>Parking available on campus</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="nearby-places">
+        <h3>📍 Nearby Landmarks</h3>
+        <div class="landmarks-grid">
+          <div class="landmark-item">
+            <div class="landmark-icon">🏥</div>
+            <div class="landmark-info">
+              <h4>Hospitals</h4>
+              <p>Loni Hospital - 2 km</p>
+              <p>Pune Medical Center - 15 km</p>
+            </div>
+          </div>
+          
+          <div class="landmark-item">
+            <div class="landmark-icon">🏪</div>
+            <div class="landmark-info">
+              <h4>Shopping</h4>
+              <p>Loni Market - 1 km</p>
+              <p>Phoenix Mall - 20 km</p>
+            </div>
+          </div>
+          
+          <div class="landmark-item">
+            <div class="landmark-icon">🍽️</div>
+            <div class="landmark-info">
+              <h4>Restaurants</h4>
+              <p>Local Eateries - 500m</p>
+              <p>Food Courts - 2 km</p>
+            </div>
+          </div>
+          
+          <div class="landmark-item">
+            <div class="landmark-icon">🏦</div>
+            <div class="landmark-info">
+              <h4>Banks & ATMs</h4>
+              <p>SBI Branch - 1 km</p>
+              <p>Multiple ATMs nearby</p>
+            </div>
+          </div>
+          
+          <div class="landmark-item">
+            <div class="landmark-icon">⛽</div>
+            <div class="landmark-info">
+              <h4>Fuel Stations</h4>
+              <p>HP Petrol Pump - 1.5 km</p>
+              <p>Indian Oil - 2 km</p>
+            </div>
+          </div>
+          
+          <div class="landmark-item">
+            <div class="landmark-icon">🏨</div>
+            <div class="landmark-info">
+              <h4>Accommodation</h4>
+              <p>Guest Houses - 2 km</p>
+              <p>Hotels in Pune - 25 km</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="campus-highlights">
+        <h3>🏛️ Campus Features</h3>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📚</div>
+            <h4>Central Library</h4>
+            <p>50,000+ books, digital resources, study halls</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🔬</div>
+            <h4>Research Labs</h4>
+            <p>15+ specialized labs with modern equipment</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🏃</div>
+            <h4>Sports Complex</h4>
+            <p>Cricket ground, basketball, indoor games</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🍽️</div>
+            <h4>Cafeteria</h4>
+            <p>Multi-cuisine food court, healthy options</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🏠</div>
+            <h4>Hostels</h4>
+            <p>Separate boys & girls hostels, 1000+ capacity</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">🚌</div>
+            <h4>Transport</h4>
+            <p>College buses from major Pune locations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

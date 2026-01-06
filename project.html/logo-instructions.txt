@@ -1,0 +1,16 @@
+<!-- This is a placeholder for the PREC logo -->
+<!-- You should replace this with the actual PREC college logo image -->
+<!-- The logo should be named 'prec-logo.png' and placed in the same directory as index.html -->
+
+<!-- For now, you can use any engineering college logo or create one with the following specifications:
+- Size: 200x200 pixels minimum
+- Format: PNG with transparent background
+- Content: Should include "PREC" text and engineering symbols
+- Colors: Should match the website theme (blues, purples, accent colors)
+-->
+
+<!-- To add the actual logo:
+1. Save the PREC logo image as 'prec-logo.png'
+2. Place it in the same folder as index.html
+3. The logo will automatically appear in the navigation bar
+-->
